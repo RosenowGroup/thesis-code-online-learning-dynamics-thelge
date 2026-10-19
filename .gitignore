@@ -1,3 +1,4 @@
+figures/r_ODE_validation_eta_0.1.png
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -216,3 +217,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+results/*.pkl
+.DS_Store
+
+# Generated simulation data
+*.pkl
+
+# macOS files
+.DS_Store
