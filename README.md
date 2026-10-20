@@ -17,17 +17,17 @@ These claims refer to the assumptions and asymptotic regimes analyzed in the the
 
 ## Model and observables
 
-Independent input vectors $\boldsymbol\xi\in\mathbb R^N$ are drawn from $\mathcal N(0,I)$. The fixed teacher has weights $\mathbf T$, normalized so that $\|\mathbf T\|^2=N$, and the evolving student has weights $\mathbf J$. Their local fields are
+Independent input vectors $\boldsymbol\xi\in\mathbb R^N$ are drawn from $\mathcal N(0,I)$. The fixed teacher has weights $\mathbf T$, normalized so that $\lVert\mathbf{T}\rVert^2=N$, and the evolving student has weights $\mathbf J$. Their local fields are
 
 $$
 u=\frac{\mathbf T\cdot\boldsymbol\xi}{\sqrt N},\qquad t=\frac{\mathbf J\cdot\boldsymbol\xi}{\sqrt N}.
 $$
 
-The teacher label is $\tau=\operatorname{sgn}(u)$ and the principal student output is $g(t)=\operatorname{erf}(t/\sqrt 2)$. With per-example squared loss $V=\tfrac12[\tau-g(t)]^2$, the online SGD update is
+The teacher label is $\tau=\mathrm{sgn}(u)$ and the principal student output is $g(t)=\mathrm{erf}(t/\sqrt 2)$. With per-example squared loss $V=\tfrac12[\tau-g(t)]^2$, the online SGD update is
 
 $$
 \mathbf J^{\mu+1}=\mathbf J^\mu+\frac{F(u,t)}{\sqrt N}\boldsymbol\xi^\mu,\qquad
-F(u,t)=\eta[\operatorname{sgn}(u)-g(t)]g'(t).
+F(u,t)=\eta[\mathrm{sgn}(u)-g(t)]g'(t).
 $$
 
 The order parameters and rescaled learning time are
